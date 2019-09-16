@@ -1,0 +1,28 @@
+<script>
+
+  function verificaSimetriaArray(array){
+
+    var retorno;
+    var i = 0;
+    var j = array.length-1;
+    var simetria = true;
+
+    while(i < array.length/2 && simetria == true)  {
+      if(array[i] + array[j] != 0){
+
+        simetria = false;
+      }
+      i++;
+      j--;
+    } ;
+
+    if(simetria) {
+      retorno = "É SIMÉTRICO";
+    } else {
+      retorno = "NÃO É SIMÉTRICO";
+    }
+
+    return retorno;
+  }
+
+</script>
